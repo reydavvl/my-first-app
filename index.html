@@ -1,0 +1,40 @@
+<!DOCTYPE html>                             <!-- Tells the browser this is an HTML5 document -->
+<html>                                      <!-- Root element of the page -->
+  <head>                                    <!-- Head contains metadata and links, not visible content -->
+    <title>Pet Age Converter</title>        <!-- Title shown on the browser tab -->
+
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file so we can style the page -->
+  </head>
+
+  <body> <!-- Body contains everything that shows on the page -->
+
+    
+    <h1>Pet Age Converter</h1> <!-- Main heading of the page -->
+
+    <div class="container"> <!-- Dog Age Converter, Container to group our input and result together -->
+
+      <label>Dog Age:</label> <!-- Label for the dog age input field -->
+
+      <input id="dogAge" type="number" placeholder="Enter dog age" min="0" value="0"> <!-- Input where user types the dog's age, type=number restricts to numbers, Add min="0" and an initial value to prevent negative ages via the spinner -->
+
+      <button onclick="convertDogAge()">Convert</button>  <!-- Button that runs our JavaScript function when clicked, onclick tells the browser which function to run -->
+
+      <p id="dogResult"></p> <!-- Paragraph where we will display the result using JavaScript -->
+    </div>
+
+    
+    <div class="container"> <!-- Cat Age Converter, Container to group our input and result together-->
+
+      <label>Cat Age:</label> <!--Label for the cat age input-->
+
+      <input id="catAge" type="number" placeholder="Enter cat age" min="0" value="0"> <!-- Input where user types the cat's age, type=number restricts to numbers, Add min="0" and an initial value to prevent negative ages via the spinner -->
+
+      <button onclick="convertCatAge()">Convert</button>  <!-- Button that runs our JavaScript function when clicked, onclick tells the browser which function to run -->
+
+      <p id="catResult"></p> <!-- Paragraph where the result is displayed using JavaScript-->
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

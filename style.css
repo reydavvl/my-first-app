@@ -1,0 +1,41 @@
+
+/* Styling the whole page */
+body {
+    font-family: Arial; /* Set the default font for the page */
+    background: #f5f5f5; /* Light grey background color */
+    padding: 20px; /* Add some space between page edge and content */
+}
+
+h1 {
+    text-align: center; /* Center the heading text */
+}
+
+/* Styling the white box that contains the input and result */
+.container {
+  background: rgb(255, 255, 255);        /* White background color */
+  padding: 20px;               /* Inner spacing inside the box*/
+    border-radius: 10px;        /* Rounds the corners of the box */
+    width: 300px;                 /* Set a fixed width for the box */  
+    margin: 20px auto;              /* 20px top and bottom margin, auto left and right to center the box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow around the box */
+}
+
+/* Styling the input field */
+input {
+    width: 100%;    /* Make the input as wide as the container */
+    padding: 8px;   /* Inner spacing inside the input */
+    margin: 8px 0;  /* Space above and below the input */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+}
+    
+/* Styling the button */
+button {
+    padding: 8px 12px; /* Inner spacing inside the button */
+    cursor: pointer;    /* Show/Change cursor on hover */
+}
+
+/* Styling the result text */
+#dogResult {
+    margin-top: 10px; /* Space above the result text */
+    font-weight: bold; /* Make the result text bold */
+}
